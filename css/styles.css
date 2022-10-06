@@ -253,6 +253,16 @@ color: #2196F3;
     display: flex;
     gap: 30px;
 }
+.about-item::before {
+    display: block;
+    content: "";
+    height: 70px;
+    background-image: url(../images/antenna\ 1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
 
 
 .about-subtitle {
