@@ -168,7 +168,7 @@ body {
 .footer-link:focus,
 .footer-link-adres:hover,
 .footer-link-adres:focus {
-color: #2196F3;
+color:var(--accent-color);
 }
 
 .nav-link {
@@ -177,12 +177,25 @@ color: #2196F3;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: #757575;
+    color:var(--maine-text-color);
     display: flex;
     margin-right: 0;
     margin-left: auto;
     gap: 50px;
-    
+}
+
+
+.conect-icon {
+    /*display: flex;
+    align-items: center;
+    background-size: cover;
+    cursor: pointer;*/
+    margin-left: 10px;
+    fill: currentColor;
+}
+.conect-icon:hover 
+.conect-icon:focus {
+    color: var(--accent-color);
 }
 
 .current {
@@ -256,15 +269,24 @@ color: #2196F3;
 .about-item::before {
     display: block;
     content: "";
-    height: 70px;
-    background-image: url(../images/antenna\ 1.svg);
+    height: 120px;
     background-repeat: no-repeat;
     background-position: center;
+    background-color: #F5F4FA;
+    
 }
-
-
-
-
+.icon-antenna::before {
+background-image: url(../images/antenna1.svg);
+}
+.icon-clock::before {
+    background-image: url(../images/clock1.svg);
+}
+.icon-diagram::before{
+    background-image: url(../images/diagram1.svg);
+}
+.icon-astronaut::before {
+    background-image: url(../images/astronaut1.svg);
+}
 .about-subtitle {
     font-family: var(--main-font);
         font-weight: 700;
@@ -358,8 +380,11 @@ img {
     /* identical to box height */
     text-align: center;
     letter-spacing: 0.03em;
-    color: #757575;
+    color:var(--maine-text-color);
 } 
+.team-item{
+
+}
 
 /* ---------FOOTER-------- */
 
