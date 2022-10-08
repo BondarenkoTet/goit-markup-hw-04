@@ -288,14 +288,15 @@ background-image: url(../images/antenna1.svg);
     background-image: url(../images/astronaut1.svg);
 }
 .about-subtitle {
-    font-family: var(--main-font);
+        font-family: var(--main-font);
         font-weight: 700;
         font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: var(--second-title-color);
-        margin-bottom: 10px;
+        padding-top: 30px ;
+        padding-bottom: 10px;
 }
 
 .about-text {
@@ -304,7 +305,7 @@ background-image: url(../images/antenna1.svg);
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: #757575;
+    color:var(--maine-text-color);
     
 }
 /* -----PORTFOLIO----- */
@@ -341,6 +342,7 @@ img {
     display: flex;
     gap: 30px;
 }
+
 .team-item {
     background: #FFFFFF;
         /* material shadow v1 */
@@ -351,14 +353,11 @@ img {
 .team-item-content {
     padding-top: 30px;
     padding-bottom: 30px;
-    
 }
-
 
 .team-title {
         color: var(--second-title-color);
 }
-
 
 .team-subtitle {
     font-weight: var(--main-font);
@@ -371,8 +370,8 @@ img {
         color: var(--second-title-color);
         margin-bottom: 10px
         ;
-    
 }
+
 .team-text{
     font-family: var(--main-font);
     font-size: 16px;
@@ -381,10 +380,29 @@ img {
     text-align: center;
     letter-spacing: 0.03em;
     color:var(--maine-text-color);
+    margin-bottom: 10px;
 } 
-.team-item{
-
+.team-soc-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
+
+.team-soc-link {
+    display: flex;
+    width: 44px ;
+    height: 44px;
+    border-radius: 50%; 
+    color: currentColor;
+    text-decoration: none;
+    align-content: center;
+    background-size: cover;
+    cursor: pointer;
+    
+}
+
+
 
 /* ---------FOOTER-------- */
 
