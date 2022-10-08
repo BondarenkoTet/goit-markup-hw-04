@@ -276,16 +276,16 @@ color:var(--accent-color);
     
 }
 .icon-antenna::before {
-background-image: url(../images/antenna1.svg);
+    background-image: url(../images/antenna1\(1\).svg);
 }
 .icon-clock::before {
-    background-image: url(../images/clock1.svg);
+    background-image: url(../images/clock1\(1\).svg);
 }
 .icon-diagram::before{
     background-image: url(../images/diagram1.svg);
 }
 .icon-astronaut::before {
-    background-image: url(../images/astronaut1.svg);
+    background-image: url(../images/astronaut\(1\).svg);
 }
 .about-subtitle {
         font-family: var(--main-font);
@@ -349,6 +349,7 @@ img {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     width: calc((100%-60px)/3);
+    align-items: center;
 }
 .team-item-content {
     padding-top: 30px;
@@ -387,21 +388,41 @@ img {
     align-items: center;
     justify-content: center;
     gap: 10px;
+    padding-top: 16px;
 }
 
-.team-soc-link {
+.team-soc-iteam {
     display: flex;
-    width: 44px ;
+    align-content: center;
+    justify-content: center;
+    background-position: center;
+}
+.team-soc-link {
+    width: 44px;
     height: 44px;
     border-radius: 50%; 
-    color: currentColor;
-    text-decoration: none;
-    align-content: center;
-    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
+    color: #AFB1B8;
+
+}
+.team-soc-icon {
+    fill: currentColor;
     
 }
+.team-soc-link:hover
+.team-soc-link:focus {
+background-color: var(--accent-color);
+color: #FFFFFF;
+}
 
+
+/*.team-soc-link:hover >.team-soc-icon
+.team-soc-link:focus >.team-soc-icon {
+    fill:var(--main-title-color);
+}*/
 
 
 /* ---------FOOTER-------- */
@@ -436,9 +457,33 @@ img {
 .footer-item:last-child {
     margin-bottom:  0px;
 }
+.contact-container {
+    display: flex;
+gap: 70px;
+}
+.footer-contacts {
+    width: 231px;
+}
+
+.footer-online {
+    width: 206px;
+    
+}
+.footer-headline { 
+    font-family: var(--main-font);
+    font-style: 900;
+    font-size: 14px ;
+    text-decoration: uppercase;
+    color: var(--main-title-color);
+    margin-bottom: 20px;
+    
+    
+}
+.footer-online-list {
+    display: flex;
+}
 
 /*---------PORTFOLIO--------*/
-
     /*-----SELECTION------  */
 
     .selection {
